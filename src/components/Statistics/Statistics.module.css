@@ -1,11 +1,12 @@
 .list {
-  background-color: rgb(201, 245, 235);
+  background-color: #e0b1cb;
   margin: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 31px;
 }
 
 .item {
