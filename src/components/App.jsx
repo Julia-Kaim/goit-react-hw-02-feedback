@@ -12,7 +12,7 @@ class App extends Component {
     bad: 0,
   };
 
-  onLeaveFeedback = state => {
+  handleLeaveFeedback = state => {
     this.setState(prevState => ({
       [state]: prevState[state] + 1,
     }));
@@ -37,7 +37,7 @@ class App extends Component {
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
-            onLeaveFeedback={this.onLeaveFeedback}
+            handleLeaveFeedback={this.handleLeaveFeedback}
           />
         </Section>
         <Section title="Statistics">
